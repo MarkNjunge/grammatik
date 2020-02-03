@@ -7,7 +7,7 @@ A grammar bot for Discord.
 Clone the repository
 
 ```
-git clone https://github.com/MarkNjunge/grammatik-discord.git
+git clone https://github.com/MarkNjunge/grammatik.git
 ```
 
 Make a `.env` file based on `.env.sample`
