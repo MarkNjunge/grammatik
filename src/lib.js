@@ -48,16 +48,19 @@ function filterResponse(res) {
 
   const result = res.data.matches
     .filter(match => !ignoredRules.includes(match.rule.id))
-    .map(match => ({
-      message: match.message,
-      replacements: match.message.replacements,
-      context: match.context,
-      rule: {
-        id: match.rule.id,
-        description: match.rule.description,
-        category: match.rule.category.name
-      }
-    }));
+    .map(match => {
+      logger.info(JSON.stringify(match));
+      return {
+        message: match.message,
+        replacements: match.message.replacements,
+        context: match.context,
+        rule: {
+          id: match.rule.id,
+          description: match.rule.description,
+          category: match.rule.category.name
+        }
+      };
+    });
 
   return result;
 }
