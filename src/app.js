@@ -6,8 +6,6 @@ const api = require("./lib");
 const client = new Discord.Client();
 const logger = new Logger();
 
-api.check("Although there master doesn't have any");
-
 client.once("ready", () => {
   logger.info("Ready");
 });
