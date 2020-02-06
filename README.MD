@@ -21,3 +21,5 @@ Start the bot
 ```
 yarn start
 ```
+
+![](/art/screenshot.png)
